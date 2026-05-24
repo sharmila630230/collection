@@ -40,3 +40,24 @@ public class Main {
 }
 
 ```
+
+**GUI**(Graphical user Interface)
+Javax.swing.JOptionPane
+
+```java
+package myFirstProject;
+import javax.swing.JOptionPane;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String name = JOptionPane.showInputDialog("what is your name");
+		// default read to string, even from a number input
+		// to counter that, we use Integer.parseInt()
+		int age = Integer.parseInt(JOptionPane.showInputDialog("what is your age"));
+				
+
+		JOptionPane.showMessageDialog(null, "Hello " + name + ". You are " + age);
+	}
+}
+```
