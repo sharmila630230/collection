@@ -129,3 +129,51 @@ public class Main {
 Same with 2D arrays
 String[][] cars = new String[5][8];
 same with 3d lists
+
+### All imp functions of String
+```java
+package myFirstProject;
+import java.util.Random;
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+	public static void main(String[] args) {
+		String name = "Vishnu";
+		
+		int len = name.length();
+		System.out.println("Length of name is " + len);
+		boolean isSame = name.equals("vishnu");
+		System.out.println("Case sensitive, is it equal ? " + isSame);
+		
+		isSame = name.equalsIgnoreCase("vishnu");
+		System.out.println("Case insensitive, is it equal ? " + isSame);
+		
+		char pointer = name.charAt(2);
+		System.out.println("Pointer at letter "+pointer);
+		
+		// name.indexOf(), name.isEmpty(), name.toUpperCase(), name.toLowerCase()
+		// name.trim() this will remove leading and ending empty space
+	}
+}
+
+```
+
+**Wrapper Class**
+Wrapper class is Reference datatype, not a simple datatype, whoch incorparates many useful functions
+		
+String is already wrapper, often start with capital first letter
+Integer, Boolean, Character, Double, String
+int, boolean, char, double, String
+
+```java
+Integer a = 70;
+// on using a. ex: a.byteValue(), you can see how many types you do
+		
+int primitiveNum = 10;
+Integer wrapperObj = primitiveNum; // Autoboxing happens here
+
+Integer wrapperObj = 20;
+int primitiveNum = wrapperObj; // Unboxing happens here
+```
