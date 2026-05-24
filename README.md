@@ -168,7 +168,7 @@ Integer, Boolean, Character, Double, String
 int, boolean, char, double, String
 
 ```java
-Integer a = 70;
+Integer a = 70; 
 // on using a. ex: a.byteValue(), you can see how many types you do
 		
 int primitiveNum = 10;
@@ -176,4 +176,32 @@ Integer wrapperObj = primitiveNum; // Autoboxing happens here
 
 Integer wrapperObj = 20;
 int primitiveNum = wrapperObj; // Unboxing happens here
+```
+
+**ArrayList**(Not camel case)
+This is pretty similar to vector in Cpp STL, A type of resizable array
+even, .size() function is similar between both.
+
+```java
+package myFirstProject;
+import java.util.ArrayList;
+
+public class Main {
+	public static void main(String[] args) {
+		ArrayList<String> cities = new ArrayList();
+		
+		cities.add("New York");
+		cities.add("Delhi");
+		cities.add("Hyderabad");
+		cities.add("Banglore");
+		
+		cities.set(0, "Mumbai");
+		
+		for (int i = 0; i < cities.size(); i++) {
+			System.out.println(cities.get(i));
+		}
+		
+		// .remove() at index, and .clear() completey also works
+	}
+}
 ```
