@@ -84,3 +84,28 @@ public class Main {
 	}
 }
 ```
+
+**Gaming tasks uses Random**
+```java
+package myFirstProject;
+import java.util.Random;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+	public static void main(String[] args) {
+		Random random = new Random();
+		
+		int val = random.nextInt(10); // range from 0 to 9, else all possible numbers
+		// have nextBoolean(), nextDouble() too
+		
+		JOptionPane.showMessageDialog(null, val);
+	}
+}
+```
+
+For to compare two string equal or not
+
+```java
+x.equals(y)
+```
