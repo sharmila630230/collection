@@ -61,3 +61,26 @@ public class Main {
 	}
 }
 ```
+
+**Math library in Java**
+All functions and finding hyoptenuse
+```java
+package myFirstProject;
+import javax.swing.JOptionPane;
+
+public class Main {
+	public static void main(String[] args) {
+		double x = 9.3, y = 27.8;
+		
+		double maxi = Math.max(x, y);
+		// all sorts of functions are present, .min(x,y)
+		// .round(), .sqrt, .ceil, .floor, .abs(x)
+		
+		System.out.print("maximum valeu is " + maxi);
+		
+		double hyp = Math.sqrt(x*x + y*y);
+		
+		JOptionPane.showMessageDialog(null, "The valeu of longest side is " + hyp);
+	}
+}
+```
