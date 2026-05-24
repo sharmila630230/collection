@@ -239,3 +239,11 @@ public class Main {
 int val = scanner.nextInt();
 System.out.printf("The value %d is entered", val)
 <img width="850" height="331" alt="image" src="https://github.com/user-attachments/assets/4e7a23aa-bff2-48df-a2ca-666d14edfa86" />
+
+final is similar to const in cpp
+
+once fixed, can't be changed.
+
+**OOPS IN Java**
+Classes and object.
+Obcject, An instance of class that may contain attributes and methods.
