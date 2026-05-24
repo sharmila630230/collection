@@ -109,3 +109,19 @@ For to compare two string equal or not
 ```java
 x.equals(y)
 ```
+
+### How strings work
+```java
+public class Main {
+	public static void main(String[] args) {
+		String[] cars = new String[4];
+		
+		cars[0] = "volvo";
+		cars[1] = "bmw";
+		cars[2] = "bugatti";
+		cars[3] = "mercedes";
+		
+		for (int i = 0; i <= 3; i++) System.out.println(cars[i]);
+	}
+}
+```
