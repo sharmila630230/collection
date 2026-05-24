@@ -201,7 +201,16 @@ public class Main {
 			System.out.println(cities.get(i));
 		}
 		
+		cities.remove(1);
+		
+		System.out.println(cities); // can print a whole list at one go
+		
 		// .remove() at index, and .clear() completey also works
 	}
 }
 ```
+
+Can create 2D array.
+ArrayList<ArrayList<String>> cities = new ArrayList();
+
+can use .add(1d array) for 2d array
