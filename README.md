@@ -18,7 +18,6 @@ public class Main {
 		
 		String intro = scanner.nextLine();
 		
-		System.out.println("Welcome, "+ intro);
 		
 		System.out.println("what is your age ?");
 		
@@ -26,11 +25,15 @@ public class Main {
 		if used next line after this, To clear that we should use next line */
 		
 		scanner.nextLine(); // to clear empty read error
-		if (age >= 18) System.out.println("Enjoy, You got access");
-		else System.out.println("Sorry, Not today");
+		
 		
 		System.out.println("What is your favourite dish ?");
 		String food = scanner.nextLine();
+
+
+		System.out.println("Welcome, "+ intro);
+		if (age >= 18) System.out.println("Enjoy, You got access");
+		else System.out.println("Sorry, Not today");
 		System.out.println("you like "+ food);
 	}
 
