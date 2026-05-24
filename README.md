@@ -125,3 +125,7 @@ public class Main {
 	}
 }
 ```
+
+Same with 2D arrays
+String[][] cars = new String[5][8];
+same with 3d lists
