@@ -214,3 +214,28 @@ Can create 2D array.
 ArrayList<ArrayList<String>> cities = new ArrayList();
 
 can use .add(1d array) for 2d array
+
+**Functions**
+You can write additional function outside *static public void main()*
+but inside *public class main*
+
+```java
+package myFirstProject;
+
+public class Main {
+	public static void main(String[] args) {
+		call();
+		call();
+		call();
+	}
+	
+	static void call() {
+		System.out.println("This function was called.");
+	}
+}
+```
+
+**printf is format specifier** 
+int val = scanner.nextInt();
+System.out.printf("The value %d is entered", val)
+<img width="850" height="331" alt="image" src="https://github.com/user-attachments/assets/4e7a23aa-bff2-48df-a2ca-666d14edfa86" />
