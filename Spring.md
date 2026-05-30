@@ -72,3 +72,25 @@ Maven make life easier by auto doing thsi and also provdes a way to store.jar fi
 
 Maven is a build automation and project management tool primarily used for Java applications. It simplifies software development by handling dependency management, compiling code, running tests, and packaging the final application, all standardized through a centralized configuration file called pom.xml
 
+
+# Spring Framework
+Learning using _Intellij idea_ 
+The program of every order, comprises of 2 things.
+- Business Logic
+- Object Creation
+
+That second one is real pain, creating managinga nd deleting.
+To counter this or help this, Spring will take care of everything.
+
+Thsi concept is also known as IOC(Inversion Of Control)
+
+Dependency Injection, is the technique to implement IOC.
+
+Instead of doing A a = new A(); 
+We can inject the object using Spring.
+
+3 ways
+- Constructor Injection
+- Setter Injection
+- Field Injection
+
