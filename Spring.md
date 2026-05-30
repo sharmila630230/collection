@@ -2,7 +2,7 @@
 
 **Prerequisites**
 Bdsucs
-XML, json, REST API, maven, gradle, hibernate
+XML, json, REST API, maven, hibernate
 
 **XML**
 eXtensible Markup Language
@@ -61,5 +61,14 @@ Th reall problem ois the overhead of post, get delete and all these operrations
 To counter this, we have REST Api
 
 There are two main menthods of implementsing this
-
 Jersey & Spring
+
+**Maven**
+When you start working simple java project that uses spring, which helps make code quicker and clean.
+You need dependencies, tehre are re 100's of dependencies to use, when spring version chnages you need to basically reinstall things manually.
+This is very frustating and time staking process.
+
+Maven make life easier by auto doing thsi and also provdes a way to store.jar file which is importnat for pject and much more advantages.
+
+Maven is a build automation and project management tool primarily used for Java applications. It simplifies software development by handling dependency management, compiling code, running tests, and packaging the final application, all standardized through a centralized configuration file called pom.xml
+
