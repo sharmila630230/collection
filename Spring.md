@@ -94,3 +94,27 @@ We can inject the object using Spring.
 - Setter Injection
 - Field Injection
 
+**.war** file
+It is web archive, which we send to cloud and run on apache Tomcat
+
+But guess what, I don't care
+
+**.jar**
+Because i got a jar file that has embedded tomcat.
+
+Go to **start.spring.io** and install a zip file with adding some needed dependencies
+
+**Spring boot** will give some convention libraries that decreas ethe time taken, It is really good. But the drawback is that you don't use that many libraries a in acode.
+
+Objects are created inside **JVM**(Java Virtual Machine)
+
+As we know the job of creating objects is spring's work.
+But where it will create, inside jm, but not same as others, It will have sperate container inside jvm(**IOC** Container)  
+
+```java
+SpringApplication.run(MyAppApplication.class, args);
+```
+This above line is responsible for creating IOC Container
+<img width="1552" height="375" alt="image" src="https://github.com/user-attachments/assets/a1e9aa3c-6abf-4ab1-9215-d119d6e3aa0b" />
+Just mentioning ApllicationContext, getBean and annotation of @Component.
+We are telling the Spring framework to create object of that class , manage and delete at your convincence
