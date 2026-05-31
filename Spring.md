@@ -186,3 +186,17 @@ public class Dog {
 }
 ```
 
+## @Autowired
+This will connect the dependency of what object created inside the Class to other classes.
+Important for the field and setter injection
+
+You can create two childs from a same class with writig @Component and both having same method, Thsi will create confusion and won't run.
+
+@Primary is an annotaion soves this and runs the soem child Class, and avoids conflict.
+
+<img width="1394" height="420" alt="image" src="https://github.com/user-attachments/assets/c623217b-6ad2-4434-a8bd-7a7c0f318181" />
+In this above image, both Laptop and Desktop implements same Computer class and comprises of same method, but @Primary defines the method.
+
+Instead of @Primary you can write @Qualifier("") below @Autowired, mentioning the prefered Class in Camel case object name.
+
+
