@@ -119,3 +119,70 @@ This above line is responsible for creating IOC Container
 <img width="1552" height="375" alt="image" src="https://github.com/user-attachments/assets/a1e9aa3c-6abf-4ab1-9215-d119d6e3aa0b" />
 Just mentioning ApllicationContext, getBean and annotation of **@Component**.
 We are telling the Spring framework to create object of that class , manage and delete at your convincence
+
+## Application Context & 3 types of injection
+ApplicationContext is reason fo creating IOC CONTAINER, and we us ethis for 3 types of injection in Human class
+myAppApplication.java
+```java
+package com.vishnu.myApp;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+@SpringBootApplication
+public class MyAppApplication {
+
+	public static void main(String[] args) {
+        ApplicationContext context = SpringApplication.run(MyAppApplication.class, args); // This is reason for creation of IOC Container(Spring)
+		// Now to assign a context to container, we equate the apllicationcontext
+
+		// We are close to creating objects with help of spring
+
+		Human obj2 = context.getBean(Human.class);
+
+		obj2.say();
+	}
+
+}
+```
+
+Human.java
+```java
+package com.vishnu.myApp;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Human {
+   @Autowired // Field Injection
+   private Dog dog; // compulsory line of initialisation
+    // Human(Dog dog) { // Constructor Injection has AutoWired by default
+        this.dog = dog;
+    }
+
+    @Autowired
+    public void setHuman(Dog dog) { // setter Injection
+        this.dog = dog;
+    }
+    public void say() {
+        dog.speak();
+    }
+}
+```
+
+Dog.java
+```java
+package com.vishnu.myApp;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Dog {
+    public void speak() {
+        System.out.println("Woof Woof and barks");
+    }
+}
+```
+
