@@ -117,5 +117,5 @@ SpringApplication.run(MyAppApplication.class, args);
 ```
 This above line is responsible for creating IOC Container
 <img width="1552" height="375" alt="image" src="https://github.com/user-attachments/assets/a1e9aa3c-6abf-4ab1-9215-d119d6e3aa0b" />
-Just mentioning ApllicationContext, getBean and annotation of @Component.
+Just mentioning ApllicationContext, getBean and annotation of **@Component**.
 We are telling the Spring framework to create object of that class , manage and delete at your convincence
